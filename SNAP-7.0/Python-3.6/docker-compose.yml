@@ -1,0 +1,8 @@
+version: "3.7"
+
+services:
+  esasnap:
+    container_name: ESA2Python
+    build:
+      context: .
+    image: deltodon/esa-snap-cpython:7.0-Py3.6
