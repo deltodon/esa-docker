@@ -1,0 +1,12 @@
+version: "3.7"
+
+services:
+  esasnap:
+    container_name: ESA2JupyterLab
+    build:
+      context: .
+    image: deltodon/esa-snap-jupyter:7.0-Py3.6
+    volumes:
+      - ./src:/workdir
+    ports:
+      - "8888:8888"
